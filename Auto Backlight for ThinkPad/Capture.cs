@@ -97,7 +97,7 @@ namespace Auto_Backlight_for_ThinkPad
                 if (hook)
                 {
                     f++;
-                    dev.InputReceived += captureHandler; 
+                    dev.InputReceived += captureHandler;
                 }
             }
             if (f != 3)
