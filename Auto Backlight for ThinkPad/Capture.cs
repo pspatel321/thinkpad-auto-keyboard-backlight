@@ -87,8 +87,8 @@ namespace Auto_Backlight_for_ThinkPad
             foreach (Device dev in _ri.EnumeratedDevices)
             {
                 bool hook = false;
-                hook |= dev.Type == Device.DeviceType.Mouse && dev.Path.StartsWith(@"\\?\ACPI#LEN0099#");
-                hook |= dev.Type == Device.DeviceType.Keyboard && dev.Path.StartsWith(@"\\?\ACPI#LEN0071#");
+                hook |= dev.Type == Device.DeviceType.Mouse && dev.Path.StartsWith(@"\\?\ACPI#LEN0");
+                hook |= dev.Type == Device.DeviceType.Keyboard && dev.Path.StartsWith(@"\\?\ACPI#LEN0");
                 hook |= dev.Type == Device.DeviceType.Hid && dev.Info != null &&
                     ((HidInfo)(dev.Info)).vendorID == 0x06cb &&
                     ((HidInfo)(dev.Info)).productID == 0x0f &&
